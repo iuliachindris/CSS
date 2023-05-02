@@ -1,0 +1,148 @@
+body{
+    font-family: 'Poppins';
+    font-size: 1em;
+    margin: 0;
+}
+
+/* #region reusable classes */
+
+.flex{
+    display: flex;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+/* #endregion */
+
+/* #region navbar container */
+
+.navbar-container{
+    padding: 16px 10%;
+}
+
+.spacer{
+    flex-grow: 1;
+}
+
+.navbar-container > div:not(:first-child){
+    margin-left: 24px;
+}
+
+/* #endregion navbar container */
+
+/* #region logo */
+
+.logo-name{
+    margin-left: 16px;
+    color: #173A56;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.logo-container{
+    font-weight: 700;
+    font-size: 30px;
+    color: #173A56;
+    line-height: 28px;
+}
+
+/* #endregion logo */
+
+a {
+    text-decoration: none;
+}
+
+/* #region menu */
+
+.menu-item{
+    font-weight: 400;
+    line-height: 28px;
+    color: #22343D;
+}
+
+.menu-item-active{
+    font-weight: 600;
+}
+
+/* #endregion menu */
+
+.content-container{
+    padding: 0 10%;;
+}
+
+/* #region button */
+
+.btn{
+    font-weight: 600;
+    line-height: 24px;
+    padding: 8px 24px;
+    background-color: white;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    color: #173A56;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background-color: #02897A;
+    border: 1px;
+    color: white;
+}
+
+/* #endregion button */
+
+.toggle-container img{
+    cursor: pointer;
+}
+
+/* #region mobile screen */
+
+@media screen and (max-width: 768px) {
+
+    .logo-name{
+        margin-left: 8px;
+    }
+
+    .navbar-container{
+        box-shadow: 8px-2px 8px rgba(0, 0, 0, 25);
+    }
+
+    .navbar-container > div {
+        display: none;
+    }
+
+    .navbar-container > div:first-child,
+    .navbar-container > div:nth-child(2),
+    .navbar-container > div:last-child {
+        display: flex;
+    }
+
+    .content-container{
+        padding: 0 5%;
+    }
+}
+/* #endregion mobile screen */
+
